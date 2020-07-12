@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var d = new Date(2020, 07, 11, 20, 36, 15);
+        var c = new Date();
+        var b = new Date();
+        console.log();
+        console.log(c.getDate());//从 Date 对象返回一个月中的某一天 (1 ~ 31)
+        console.log(c.getDay());//从 Date 对象返回一周中的某一天 (0 ~ 6)
+        console.log(c.getMonth());//从 Date 对象返回月份 (0 ~ 11)
+        console.log(c.getFullYear());//从 Date 对象以四位数字返回年份
+        console.log(d.getHours());//返回 Date 对象的小时 (0 ~ 23)
+        console.log(d.getUTCMinutes());//返回 Date 对象的分钟 (0 ~ 59)
+        console.log(d.getSeconds());//返回 Date 对象的秒数 (0 ~ 59)
+        console.log(d.getMilliseconds());//返回 Date 对象的毫秒(0 ~ 999)
+        console.log(d.getTime());//返回 1970 年 1 月 1 日至今的毫秒数
+        console.log(d.getTimezoneOffset());//返回本地时间与格林威治标准时间 (GMT) 的分钟差
+        c.setDate(25);
+        c.setMonth(12);
+        c.setFullYear(1999);
+        c.setHours(15);
+        c.setMinutes(50);
+        c.setSeconds(59);
+        c.setMilliseconds(998);
+        console.log(c);
+        b.setUTCDate(12)	//根据世界时设置 Date 对象中月份的一天 (1 ~ 31)
+        b.setUTCMonth(12)	//根据世界时设置 Date 对象中的月份 (0 ~ 11)
+        b.setUTCFullYear(1998)	//根据世界时设置 Date 对象中的年份（四位数字）
+        b.setUTCHours(23)	//根据世界时设置 Date 对象中的小时 (0 ~ 23)
+        b.setUTCMinutes(23)	//根据世界时设置 Date 对象中的分钟 (0 ~ 59)
+        b.setUTCSeconds(23)	//根据世界时设置 Date 对象中的秒钟 (0 ~ 59)
+        b.setUTCMilliseconds(23)	//根据世界时设置 Date 对象中的毫秒 (0 ~ 999)
+        console.log(b);
+    </script>
+</body>
+
+</html>

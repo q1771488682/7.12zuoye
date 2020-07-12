@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 3.141592653589793
+        // 2.718281828459045
+        // 0.6931471805599453
+        // 2.302585092994046
+        // 1.4426950408889634
+        // 0.4342944819032518
+        // 0.7071067811865476
+        // 1.4142135623730951
+        console.log(Math.PI);
+        console.log(Math.E);
+        console.log(Math.LN2);
+        console.log(Math.LN10);
+        console.log(Math.LOG2E);
+        console.log(Math.LOG10E);
+        console.log(Math.SQRT1_2);
+        console.log(Math.SQRT2);
+
+        var x=15.45;
+        var y=5.68;
+        console.log(Math.abs(x));	    //返回x的绝对值。
+        console.log(Math.round(x));	//返回x四舍五入之后的整数值
+        console.log(Math.ceil(x));	//返回x的近似值，向上取整
+        console.log(Math.floor(x));	//返回x的近似值，向下取整
+        console.log(Math.max(x,y));	//返回x,y中的最大值
+        console.log(Math.min(x,y));	//返回x,y中的最小值
+        console.log(Math.random());	//返回一个0~1之间的数字
+        console.log(Math.trunc(x));	//将x的小数部分去除，返回整数部分(ie不能使用)
+        console.log(Math.pow(x,y));	//取x的y次幂
+        console.log(Math.sqrt(x));	//返回x的平方根
+        console.log(Math.sin(x));	    //返回x的正弦值
+        console.log(Math.cos(x));	    //返回x的余弦值
+        console.log(Math.tan(x));	    //返回x的正切值
+        console.log(Math.asin(x));	//返回x的反正弦值
+        console.log(Math.acos(x));	//返回x的反余弦值
+        console.log(Math.atan(x));	//返回x的反正切值
+
+        console.log(Math.floor( Math.random() * (y - x) + x ));     // 包含x不包含y
+        console.log(Math.floor( Math.random() * (y - x + 1) + x  ));      // 包含x包含y
+    </script>
+</body>
+</html>
